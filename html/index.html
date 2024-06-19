@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="Logo" style="color: red;">Expres<span style="color: black;">Art</span></a>
+
+        <ul class="navlist">
+            <li>
+                <a href="#">Incio</a>
+            </li>
+            <li>
+                <a href="#">Leer mas</a>
+            </li>
+            <li>
+                <a href="#">Informacion</a>
+            </li>
+
+        </ul>
+        <div class="nav-rigth">
+            <a href="#" class="btn-primary">Iniciar sesión</a>
+            <a href="#" class="btn-secundary">Registrarse</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- seccion-1 -->
+    <section class="seccion-1">
+            <h1>Descubre y comparte arte con nuestra comunidad.</h1>
+        </div>
+    </section>
+
+    <!-- seccion-2 -->
+    <section class="segunda-seccion">
+        <div class="image-container">
+            <img src="../assets/imagenes/img-section-2.png" alt="Artwork">
+        </div>
+        <div class="texto-contenedor">
+            <h1>Sube tus ideas</h1>
+            <p>Sube Tus Ideas Donde tus <br> proyectos cobran vida. <br> Comparte, conecta y haz que <br> tus ideas brillen. ¡Es tu <br>momento, no esperes más!</p>
+            <button>Explorar</button>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+
+<script>
+        let menu =document.querySelector(`#menu-icon`);
+        let navlist = document.querySelector(`.navlist`);
+
+        menu.onclick = () => {
+            menu.classList.toggle(`bx-X`)
+            navlist.classList.toggle(`open`)
+        }
+</script>
+
+</body>
+</html>
