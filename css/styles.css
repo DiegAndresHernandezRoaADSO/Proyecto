@@ -176,10 +176,12 @@ header{
 .tercera-seccion{
   background-color: #DAFFF6;
   padding: 8px 15%;
-  display: block;
   margin: 10px 0;
 }
 
+tercera__seccion--titulo {
+  
+}
 .tercera-seccion h1{
   color:#006B6C ;
   text-align: center;
@@ -191,12 +193,12 @@ header{
   font-size: 20px;
 }
 
-.tercera-seccion img{
+.card_items{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 420px;
-text-align: center;
+  margin-top: 30px;
 }
 
 

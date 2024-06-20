@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.image-section {
+    flex: 1;
+    background: url('login.png') no-repeat center center;
+    background-size: cover;
+}
+
+.login-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* Ensures background is white */
+}
+
+.login-section h1 {
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-bottom: 5px;
+}
+
+.login-section input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Borde más redondo */
+}
+
+.login-section .login-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: red; /* Cambio de color de fondo a rojo */
+    color: white; /* Cambio de color de texto a blanco */
+    border: 1px solid red; /* Borde con color rojo */
+    border-radius: 20px; /* Borde más redondo */
+    cursor: pointer;
+}
+
+.social-login {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-login p {
+    margin: 0 0 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.google-btn,
+.facebook-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #767676; /* Borde con color gris medio */
+    border-radius: 20px; /* Borde más redondo */
+    cursor: pointer;
+    width: 48%; /* Adjusts width to fit two buttons side by side */
+}
+
+.google-btn {
+    background-color: white;
+    color: black;
+}
+
+.facebook-btn {
+    background-color: white;
+    color: black;
+}
+
+.google-btn img,
+.facebook-btn img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
