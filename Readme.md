@@ -1,2 +1,2 @@
-# proyecto galeria de arte
+git
 
