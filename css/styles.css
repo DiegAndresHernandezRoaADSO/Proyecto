@@ -174,7 +174,7 @@ header h1 {
     .cuarta-seccion {
       background-image: url(../assets/imagenes/Fondo_fond.png);
       background-repeat: no-repeat;
-      padding: 15px 10%;
+    padding: 110px 15%; 
       display: flex;
       justify-content: flex-end;
       align-items: center;
