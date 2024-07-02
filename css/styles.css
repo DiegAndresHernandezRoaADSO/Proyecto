@@ -1,4 +1,5 @@
 
+/* Estilos para el header */
 header {
     background-image: url(../assets/imagenes/Fondo.png);
     background-size: cover;
@@ -9,11 +10,8 @@ header h1 {
     font-size: 5rem;
 }
 
-
-
-/* primera seccion */
-
-.contenedor{
+/* Estilos para la primera sección */
+.contenedor {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -23,7 +21,7 @@ header h1 {
     justify-content: center;
 }
 
-.cuadro-negro{
+.cuadro-negro {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,82 +35,59 @@ header h1 {
     text-align: center;
     color: white;
     z-index: 2;
+    padding: 20px; /* Añadido para consistencia */
 }
 
-.boton{
+.boton {
     margin-top: 30px;
-}
-
-.boton{
     padding: 10px 20px;
-    border-radius: 10px;
-    background-color: transparent;
     border: 2px solid white;
-    color: white;
     border-radius: 5px;
-}
-
-.boton:hover{
-    background-color:#000000 ;
-}
-
-.cuadro-negro{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: transparent;
     color: white;
-    padding: 20px;
+    cursor: pointer;
 }
 
-  /* segunda seccion */
+.boton:hover {
+    background-color: #000000;
+}
 
+/* Estilos para la segunda sección */
 .segunda-seccion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambiado para adaptarse mejor en móviles */
     align-items: center;
     background-color: #f1bdce;
     padding: 110px 15%; 
-
-
 }
 
 .image-container {
-    flex: 1;
-    margin-right: 20px;
+    margin-bottom: 20px; /* Modificado para espacio uniforme */
 }
 
 .image-container img {
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
 .texto-contenedor {
-    flex: 1;
     text-align: center;
 }
 
 .texto-contenedor h1 {
-    color: #C31952;
+    color: #c31952;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .texto-contenedor p {
-    color: #C31952;
-    font-size:  20px;;
+    color: #c31952;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .texto-contenedor button {
-    background-color: #FF0000; 
+    background-color: #ff0000; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -121,97 +96,91 @@ header h1 {
 }
 
 .texto-contenedor button:hover {
-    background-color:#D40000 ;
+    background-color: #d40000;
 }
 
-  /* seccion-tercera */
-
-.tercera-seccion{
-    background-color:#6CAC4F;
+/* Estilos para la tercera sección */
+.tercera-seccion {
+    background-color: #6cac4f;
     text-align: center;
     padding: 110px 15%; 
 }
 
-.tercera-seccion h1{
-    color: #FFFFFF;
+.tercera-seccion h1 {
+    color: #ffffff;
     margin-top: 10px;
 }
 
-.tercera-seccion p{
-    color: #FFFFFF;
+.tercera-seccion p {
+    color: #ffffff;
 }
 
-.tercera-seccion-img{
+.tercera-seccion-img {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
-.tercera-seccion-img img{
+
+.tercera-seccion-img img {
     margin: 30px;
     max-width: 200px;
     height: auto;
     border-radius: 15px;
 }
 
-.tercera-seccion-boton{
-    margin-top: 30px;
-}
 .tercera-seccion button {
-    background-color: #FF0000; 
+    background-color: #ff0000; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 .tercera-seccion button:hover {
-    background-color: #CC0000;
+    background-color: #cc0000;
 }
 
-/* cuarta seccion */
+/* Estilos para la cuarta sección */
+.cuarta-seccion {
+    background-image: url(../assets/imagenes/Fondo_fond.png);
+    background-repeat: no-repeat;
+    padding: 110px 15%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 192, 203, 0.8);
+}
 
-    .cuarta-seccion {
-      background-image: url(../assets/imagenes/Fondo_fond.png);
-      background-repeat: no-repeat;
-      padding: 110px 15%; 
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100vh;
+.cuarta-seccion-contenido {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin-right: 50px;
+}
 
-      background-color: rgba(255, 192, 203, 0.8);
-    }
+.cuarta-seccion-contenido h1 {
+    color: #c32f00;
+}
 
-    .cuarta-seccion-contenido {
-      padding: 20px;
-      text-align: center;
-      max-width: 400px;
-      margin-right: 50px;
+.cuarta-seccion p {
+    color: #333;
+}
 
-    }
-
-    .cuarta-seccion-contenido h1 {
-      color: #C32F00;
-    }
-
-    p {
-      color: #333;
-
-    }
-    .cuarta-seccion button{
-    background-color: #FF0000; 
+.cuarta-seccion button {
+    background-color: #ff0000; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    }
-    
+}
 
-    /* footer */
-    footer {
-    background-color: #c44a47; /* Matching the red color from the image */
+/* Estilos para el footer */
+footer {
+    background-color: #c44a47;
     padding: 5%; 
     text-align: center;
 }
@@ -245,33 +214,21 @@ header h1 {
     }
 }
 
-@media(max-width: 600px){
-  .cuarta-seccion{
-    justify-content: center;
-  }
-}
-
-
-
-@media(max-width:768px){
+@media (max-width: 768px) {
     .segunda-seccion {
-        flex-direction: column;
         padding: 50px 10%;
-}
-.image-container{
-    margin-right: 0;
-    margin-bottom: 20px;
     }
 
-    .image-container img{
-        max-width: 100%;
+    .image-container {
+        margin-bottom: 20px;
     }
-    .texto-contenedor p{
+
+    .texto-contenedor p {
         font-size: 16px;
     }
-    .texto-contenedor buttom { 
+
+    .texto-contenedor button {
         font-size: 14px;
         padding: 10px 20px;
     }
 }
-
