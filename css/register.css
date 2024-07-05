@@ -1,110 +1,125 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
-
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
-
-.left {
-    flex: 1;
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-.room-image {
+    min-height: 100vh;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    
+    background: url('../assets/imagenes/fondos-vist.png');
+    background-position: center;
+    background-size: cover;
 }
-
-.right {
-    flex: 1;
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-}
 
-.login-form {
-    width: 80%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #fff;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
     text-align: center;
 }
-
-.login-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 15px;
 }
-
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #767676;
-    border-radius: 20px;
-}
-
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-form button[type="submit"] {
-    background-color: #e60023;
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
     color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
 }
 
-.google-button {
+input:focus ~ label,
+input:valid ~ label {
+    top: -15px; /* Ajusta este valor según prefieras para separar el label del borde superior */
+}
+
+.inputbox input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff; /* Asegúrate de que el color del texto sea blanco */
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff; /* Fondo azul */
-    color: #000;
-    border: 12px solid #767676; /* Borde blanco */
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    justify-content: center;  
 }
 
-
-
-.google-icon {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+.forget label input{
+    margin-right: 3px;
+    
 }
-
-.login-form p {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.login-form a {
-    color: #e60023;
+.forget label a{
+    color: #fff;
     text-decoration: none;
 }
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
 
-
+button:hover{
+    background: rgb(255, 255, 255);
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
