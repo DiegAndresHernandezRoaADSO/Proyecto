@@ -174,6 +174,7 @@ header {
     border: 2px solid var(--white-color); /* Borde blanco del botón */
     color: var(--white-color); /* Texto blanco del botón */
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .boton:hover {
