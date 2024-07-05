@@ -123,3 +123,20 @@ button:hover{
 .register p a:hover{
     text-decoration: underline;
 }
+
+
+@media(max-width:768px){
+    .form-box{
+        width: 80%; /* Ajusta el ancho como prefieras */
+        height: auto; /* Permite que la altura se ajuste según el contenido */
+        margin: 20px; /* Añade un margen para separar del borde de la pantalla */
+    }
+    .inputbox{
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+
+    .forget{
+        font-size: 0.8rem;  /* reduce el tamaño del texto */
+        
+    }
+}
