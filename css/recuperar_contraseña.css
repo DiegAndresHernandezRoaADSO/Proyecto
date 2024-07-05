@@ -92,3 +92,31 @@ button:hover{
     background: rgb(255, 255, 255);
 }
 
+
+
+/* Estilos base que ya tienes */
+
+/* Media query para tabletas y dispositivos móviles */
+@media (max-width: 768px) {
+    .form-box {
+        width: 80%; /* Ajusta el ancho como prefieras */
+        height: auto; /* Permite que la altura se ajuste según el contenido */
+        margin: 20px; /* Añade un margen para separar del borde de la pantalla */
+    }
+
+    .inputbox {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .inputbox label {
+        font-size: 0.8em; /* Reduce el tamaño del texto del label */
+    }
+
+    .inputbox ion-icon {
+        font-size: 1em; /* Ajusta el tamaño del ícono */
+    }
+
+    button {
+        font-size: 0.9em; /* Ajusta el tamaño del botón */
+    }
+}
