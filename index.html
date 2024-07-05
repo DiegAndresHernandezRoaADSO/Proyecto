@@ -1,108 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de arte</title>
-    <link rel="icon" href="./LOGO_OFI.png">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="vh-100">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="padding: 10px 5%;">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#" style="color: #F94144; font-size: 25px;">Expres <span style="color: black;">Art</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel" style="color:#F94144">Expres <span style="color: rgb(255, 255, 255);">Art</span></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Leer más</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Información</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-                            <a href="./html/iniciar-sesion.html" class="text-white text-decoration-none px-3 py-1 rounded-2" style="background-color: #0496FF;">Iniciar sesión</a>
-                            <a href="./html/register.html" class="text-white text-decoration-none px-3 py-1 rounded-2" style="background-color: #F94144;">Registrarme</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+
+
+    <header>
+        <a  href="#" class="logo" style="color: #F94144; font-size: 24px;">Expres<span style="color: black;">Art</span></a>
+
+        <ul class="navlist">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Leer mas</a></li>
+            <li><a href="#">Informacion</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="./html/iniciar-sesion.html" class="btn-primary">Iniciar Sesion</a>
+            <a href="./html/register.html" class="btn-secundary">Registrarse</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
     </header>
-    
 
-        <!-- seccion-1 -->
-        <section class="contenedo h-100 d-flex align-items-center justify-content-center">
-            <div class="cuadro-negro">
-                <h1 class="text text-light text-center text-white" style="font-size: 60px;" >Descubre y comparte arte con <br> nuestra comunidad.</h1>
-                <div>
-                    <button class="boton">Comenzar ahora</button>
-                </div>
+    <!-- primera seccion -->
+    <section class="primera-seccion">
+        <div class="cuadro-negro">
+            <h1 class="text" >Descubre y comparte arte con <br> nuestra comunidad.</h1>
+            <div>
+                <button class="boton">Comenzar ahora</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- seccion 2 -->
-        <section class="segunda-seccion">
-            <div class="image-container">
-                <img src="./assets/imagenes/img-section-2.png" alt="Artwork">
+    <!-- segunda seccion -->
+    <section class="segunda-seccion">
+        <div class="image-container">
+            <img src="./assets/imagenes/img-section-2.png" alt="Artwork">
+        </div>
+        <div class="texto-contenedor">
+            <h1>Sube tus ideas</h1>
+            <p>Sube Tus Ideas Donde tus <br> proyectos cobran vida. <br> Comparte, conecta y haz que <br> tus ideas brillen.
+                ¡Es tu <br>momento, no esperes más!</p>
+                <button>Explorar</button>
             </div>
-            <div class="texto-contenedor">
-                <h1>Sube tus ideas</h1>
-                <p>Sube Tus Ideas Donde tus <br> proyectos cobran vida. <br> Comparte, conecta y haz que <br> tus ideas brillen.
-                    ¡Es tu <br>momento, no esperes más!</p>
-                    <button>Explorar</button>
-                </div>
-            </section>
-            
-            
-            <!-- seccion 3 -->
-            <section class="tercera-seccion">
-              <h1>Guarda las ideas <br> que te gusten</h1>
-              <p>Guarda tus ideas y proyectos. Colecciona tus ideas <br>favoritas y compártelas con otros. ¡Es tu momento, <br> no esperes más!</p>
-              <div class="tercera-seccion-img">
+    </section>
+
+        <!-- tercera seccion -->
+
+        <section class="tercera-seccion">
+            <h1>Guarda las ideas <br> que te gusten</h1>
+            <p>Guarda tus ideas y proyectos. Colecciona tus ideas <br>favoritas y compártelas con otros. ¡Es tu momento, <br> no esperes más!</p>
+            <div class="tercera-seccion-img">
                 <img src="./assets/imagenes/image 1.png" alt="img-1">
                 <img src="./assets/imagenes/image 2.png" alt="img-2">
                 <img src="./assets/imagenes/image 3 (2).png" alt="img-3">
-              </div>
-                    <div class="tercera-seccion-boton">
-                        <button>Explorar</button>
-                    </div>
-            </section>
-            
-            <!-- seccion 4 -->
-             <section class="cuarta-seccion">
-              <div class="cuarta-seccion-contenido">
-                <h1>Inspírate y <br> Crea</h1>
-                <p>Guarda y comparte tus proyectos artísticos. Colecciona tus pinturas favoritas e inspírate para crear nuevas obras maestras. ¡Es tu momento, no esperes más!</p>
+            </div>
+            <div class="tercera-seccion-boton">
                 <button>Explorar</button>
-              </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- quinta seccion -->
+        <!-- cuarta seccion -->
+        <section class="cuarta-seccion">
+            <div class="image-section">
+                <img src="./assets/imagenes/Fondo_fond.png" alt="Inspírate y Crea">
+            </div>
+            <div class="text-section">
+                <h1>Inspírate y <br> Crea</h1>
+                <p>Guarda y comparte tus proyectos <br> artísticos. Colecciona tus pinturas <br> favoritas e inspírate para crear nuevas  <br>obras maestras. ¡Es tu momento, no <br> esperes más!</p>
+                <button>Explorar</button>
+            </div>
+        </section>
 
-            <footer class="footer-container"> 
-              <a href="#">Terminos de servicio</a>
-              <a href="#">Politica y privacida</a>
-              <a href="#">Ayuda</a>
+        <!-- footer -->
+
+        <footer class="footer-container"> 
+            <a href="#">Terminos de servicio</a>
+            <a href="#">Politica y privacida</a>
+            <a href="#">Ayuda</a>
             <a href="mailto:fernandoadelgadoarnedo@gmail.com">Correo: hernandezroadiegoandres@gmail.com</a>
-            </footer>
+        </footer>
 
-
-    </header>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
