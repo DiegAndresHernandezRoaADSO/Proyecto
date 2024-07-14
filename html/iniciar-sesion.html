@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
     <link rel="stylesheet" href="../css/iniciar-sesion.css">
-    <title>Iniciar sesión</title>
 </head>
 <body>
     <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h1 style="text-align: center; color:white">Iniciar sesión </h1>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label>Correo</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label>Contraseña</label>
-                    </div>
-                    <div class="forget">
-                        <label>¿Aún no estás en ExpresArt? <a href="#">Regístrate</a></label>
-                    </div>
-                    <button>Iniciar sesión</button>
-                    <div class="register">
-                        <p>¿No tienes una cuenta? <a href="../html/register.html">Regístrate</a></p>
-                        <p style="margin-top: 20px;"><a href="../html/recuperar_contraseña.html">¿Olvidaste tu Contraseña?</a></p> <!-- Ajuste aquí -->
-                    </div>
-                </form>
+        <form>
+            <h2>Iniciar sesión</h2>
+            <div class="input-group">
+                <label for="email">Correo</label>
+                <input type="text" name="email" id="email" placeholder="Correo">
+    
+                <label for="Password">Password</label>
+                <input type="Password" name="Password" id="Password" placeholder="Password">
+                <input class="btn" type="submit" value="Enviar">
             </div>
-        </div>
+            <div class="register">
+                <p>¿No tienes una cuenta? <a href="../registrarse/registrarse.html">Regístrate</a></p>
+                <p><a href="../recuperar contraseña/recuperar-contraseña.html">¿Olvidaste tu Contraseña?</a></p>
+            </div>
+        </form>
     </section>
+    <script src="./app.js"></script>
 </body>
 </html>
