@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recupera tu contraseña</title>
+    <title>recuperar contraseña</title>
     <link rel="stylesheet" href="../css/recuperar_contraseña.css">
 </head>
 <body>
+
+    
     <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Recuperar Contraseña</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label>Ingresa tu Correo</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label>Cambia tu contraseña</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label>Confirma tu contraseña</label>
-                    </div>
-                    <button>Enviar</button>
-                </form>
+        <form>
+            <h2>Recupera tu contraseña</h2>
+            <div class="input-group">
+                <label for="email">Ingresa tu Correo</label>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu correo">
+    
+                <label for="Password">Nueva contraseña</label>
+                <input type="Password" name="Password" id="Password" placeholder="Nueva contraseña">
+                
+                <label for="Password">Confirmar contraseña</label>
+                <input type="Password" name="Password" id="Password" placeholder="Confirmar contraseña">
+
+                <input class="btn" type="submit" value="Enviar">
             </div>
-        </div>
+
+        </form>
     </section>
+
 </body>
 </html>
