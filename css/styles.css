@@ -137,11 +137,11 @@ header {
     display: none;
     position: absolute;
     min-width: 160px;
-    background-color: #ffffff;
     z-index: 1;
     left: 0; /* Alinea el menú desplegable a la izquierda */
-    padding: 10px 0; /* Añade un poco de espacio alrededor de los enlaces */
+    padding: 10px 0;  /* Añade un poco de espacio alrededor de los enlaces */
 }
+
 
 .dropdown-content a {
     color: black;
@@ -408,7 +408,7 @@ footer {
 }
   /* Media queries para diferentes tamaños de pantalla */
   /* Media queries para diferentes tamaños de pantalla */
-  @media (max-width: 1300px) {
+@media (max-width: 1300px) {
     header {
       padding: var(--nav-padding); /* Padding del encabezado para pantallas más pequeñas */
     }
