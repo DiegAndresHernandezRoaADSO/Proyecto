@@ -126,7 +126,94 @@ header {
     cursor: pointer;
     display: none;
 }
+/* Agrega estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    left: 0; /* Alinea el menú desplegable a la izquierda */
+    padding: 10px 0;  /* Añade un poco de espacio alrededor de los enlaces */
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.banner {
+    background-color: #E74C3C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    padding: 25px 10%;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 0 1 calc(50% - 40px); /* Two columns: Adjusting for two cards per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 15px;
+    background-color: #655B5B;
+    color: white;
+    width: 100%;
+    text-align: center;
+} 
+
+
+@media (max-width:1020px){
+    .banner{
+        font-size: 1.rem;
+    }
+    .cards {
+        padding: 25px 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        flex: 0 1 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+
+}
 
 
 
