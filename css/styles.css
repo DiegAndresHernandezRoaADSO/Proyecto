@@ -74,7 +74,7 @@ header {
 }
 
 .navlist a:hover {
-    text-shadow: 3px 3px 20px var(--tertiary-color), -2px 1px 30px var(--primary-color); /* Sombra de texto al pasar el cursor */
+    text-shadow: 3px 3px 20px var(--tertiary-color), -2px 1px 30px var(--primary-color); 
 }
 
   /* Estilo de la sección derecha de la navegación */
@@ -136,10 +136,11 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:transparent;
     min-width: 160px;
+    background-color: #ffffff;
     z-index: 1;
-    text-align: center;
+    left: 0; /* Alinea el menú desplegable a la izquierda */
+    padding: 10px 0; /* Añade un poco de espacio alrededor de los enlaces */
 }
 
 .dropdown-content a {
@@ -152,6 +153,7 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
   /* Estilo del contenedor principal */
 .primera-seccion {
