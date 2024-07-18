@@ -74,7 +74,7 @@ header {
 }
 
 .navlist a:hover {
-    text-shadow: 3px 3px 20px var(--tertiary-color), -2px 1px 30px var(--primary-color); /* Sombra de texto al pasar el cursor */
+    text-shadow: 3px 3px 20px var(--tertiary-color), -2px 1px 30px var(--primary-color); 
 }
 
   /* Estilo de la sección derecha de la navegación */
@@ -126,6 +126,34 @@ header {
     cursor: pointer;
     display: none;
 }
+
+/* Agrega estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    left: 0; /* Alinea el menú desplegable a la izquierda */
+    padding: 10px 0;  /* Añade un poco de espacio alrededor de los enlaces */
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
   /* Estilo del contenedor principal */
 .primera-seccion {
@@ -379,6 +407,7 @@ footer {
     text-decoration: underline;
 }
   /* Media queries para diferentes tamaños de pantalla */
+  /* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 1300px) {
     header {
       padding: var(--nav-padding); /* Padding del encabezado para pantallas más pequeñas */
@@ -446,6 +475,14 @@ footer {
     }
 }
 
+/* Estilos adicionales de tu diseño responsive */
+@media (max-width: 940px) {
+    /* Ajustes para el menú desplegable en pantallas más pequeñas */
+    .navlist {
+        /* Tu código existente para el menú desplegable */
+    }
+}
+/* {----------------------------- */
 @media (max-width: 450px) {
     .container h1 {
         font-size: 2.5rem;
