@@ -38,11 +38,12 @@ header {
     top: 0;
     right: 0;
     z-index: 1000; 
-    padding: 25px 10%;
+    padding: 25px 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 0.50s ease;
+    margin-bottom: 12px;
 }
 
   /* Estilo del logo */
@@ -84,7 +85,7 @@ header {
 }
 
   /* Estilo del botón primario (Iniciar Sesión) */
-.btn-primary {
+.boton_primario {
     display: inline-block;
     padding: 14px 35px;
     background: transparent;
@@ -96,13 +97,13 @@ header {
     border: 2px solid var(--tertiary-color); /* Borde negro del botón */
 }
 
-.btn-primary:hover {
+.boton_primario:hover {
     background-color: var(--tertiary-color); /* Fondo negro al pasar el cursor */
     color: var(--white-color); /* Texto blanco al pasar el cursor */
 }
 
   /* Estilo del botón secundario (Registrarse) */
-.btn-secundary {
+.boton_secundario {
     display: inline-block;
     padding: 14px 35px;
     background: var(--button-background-color); /* Fondo rojo del botón */
@@ -113,7 +114,7 @@ header {
     margin-right: 12px;
 }
 
-.btn-secundary:hover {
+.boton_secundario :hover {
     background-color: var(--button-hover-color); /* Fondo rojo oscuro al pasar el cursor */
     color: var(--button-text-color); /* Texto blanco al pasar el cursor */
 }
@@ -152,12 +153,14 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.banner {
+
+.banner{
     background-color: #E74C3C;
     padding: 20px;
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    top: 60px;  
 }
 
 .cards {
@@ -168,12 +171,10 @@ header {
 }
 
 .card {
-    background-color: #f0f0f0;
-    border: 2px solid #ddd;
     border-radius: 15px;
     overflow: hidden;
     margin: 10px;
-    flex: 0 1 calc(50% - 40px); /* Two columns: Adjusting for two cards per row */
+    flex: 0  calc(50% - 40px); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +182,7 @@ header {
 }
 
 .card img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -214,16 +215,6 @@ header {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
