@@ -135,11 +135,4 @@ input::placeholder, textarea::placeholder {
     text-decoration: underline;
 }
 
-.error{
-    border:  solid 2px red;
-}
-
-.correcto{
-    border: solid 2px rgb(14, 255, 175);
-} 
 
