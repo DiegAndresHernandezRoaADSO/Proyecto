@@ -60,11 +60,11 @@ header {
 }
 
   /* Estilo de la lista de navegación */
-.navlist {
+.lista_navegacion {
     display: flex;
 }
 
-.navlist a {
+.lista_navegacion a {
     display: inline-block;
     margin: 0 25px;
     font-size: var(--p-font); /* Tamaño de fuente de los enlaces */
@@ -73,7 +73,7 @@ header {
     color: var(--tertiary-color); /* Color negro de los enlaces */
 }
 
-.navlist a:hover {
+.lista_navegacion a:hover {
     text-shadow: 3px 3px 20px var(--tertiary-color), -2px 1px 30px var(--primary-color); 
 }
 
@@ -84,7 +84,7 @@ header {
 }
 
   /* Estilo del botón primario (Iniciar Sesión) */
-.btn-primary {
+.btn-primario{
     display: inline-block;
     padding: 14px 35px;
     background: transparent;
@@ -96,13 +96,13 @@ header {
     border: 2px solid var(--tertiary-color); /* Borde negro del botón */
 }
 
-.btn-primary:hover {
+.btn-primario:hover {
     background-color: var(--tertiary-color); /* Fondo negro al pasar el cursor */
     color: var(--white-color); /* Texto blanco al pasar el cursor */
 }
 
   /* Estilo del botón secundario (Registrarse) */
-.btn-secundary {
+.btn-secundario {
     display: inline-block;
     padding: 14px 35px;
     background: var(--button-background-color); /* Fondo rojo del botón */
@@ -113,13 +113,13 @@ header {
     margin-right: 12px;
 }
 
-.btn-secundary:hover {
+.btn-secundario:hover {
     background-color: var(--button-hover-color); /* Fondo rojo oscuro al pasar el cursor */
     color: var(--button-text-color); /* Texto blanco al pasar el cursor */
 }
 
   /* Estilo del icono del menú */
-#menu-icon {
+#menu-icono {
     font-size: 34px;
     color: var(--tertiary-color); /* Color negro del icono */
     z-index: 10001;
@@ -193,6 +193,7 @@ header {
 
 .boton {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .boton {
@@ -424,7 +425,7 @@ footer {
         height: auto;
     }
 
-    .navlist a {
+    .lista_navegacion a {
         margin: 0 25px;
     }
 
@@ -438,11 +439,11 @@ footer {
 }
 
 @media (max-width: 940px) {
-    #menu-icon {
+    #menu-icono{
         display: block;
     }
 
-    .navlist {
+    .lista_navegacion {
         position: absolute;
         top: 0;
         right: -100%;
@@ -456,38 +457,30 @@ footer {
         transition: all 0.7s ease;
     }
 
-    .navlist a {
+    .lista_navegacion a {
         display: block;
         padding: 0;
         margin: 0 0 5px;
         font-size: 1.7rem;
     }
 
-    .navlist.open {
+    .lista_navegacion.open {
         right: 0;
+    }
+    .dropdown-content{
+        text-align: center;
     }
 }
 
 @media (max-width: 600px) {
-    .nav-right .btn-primary,
-    .nav-right .btn-secundary {
+    .nav-right .btn-primario,
+    .nav-right .btn-secundario {
       display: none; /* Ocultar botones en pantallas más pequeñas */
     }
 }
 
 /* Estilos adicionales de tu diseño responsive */
-@media (max-width: 940px) {
-    /* Ajustes para el menú desplegable en pantallas más pequeñas */
-    .navlist {
-        /* Tu código existente para el menú desplegable */
-    }
-}
-/* {----------------------------- */
-@media (max-width: 450px) {
-    .container h1 {
-        font-size: 2.5rem;
-    }
-}
+
 
 @media (max-width: 940px) {
     .segunda-seccion {
