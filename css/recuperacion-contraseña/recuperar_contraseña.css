@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--main-bg-color) url(../assets/imagenes/fondos-vist.png) center/cover no-repeat;
+    background: var(--main-bg-color) url(/assets/imagenes/fondos-vist.png) center/cover no-repeat;
     height: 100vh;
     margin: 0;
 }
