@@ -181,7 +181,7 @@ header{
 .dropdown-link > a{
     display: flex;
     background-color: #fff;
-    color: #3498db;
+    color: #000000;
     padding: .5rem 1rem;
     font-size: .9rem;
     align-items: center;
@@ -190,7 +190,7 @@ header{
 }
 
 .dropdown-link:hover > a{
-    background-color: #3498db;
+    background-color: #FF0000; 
     color: #fff;
 }
 
@@ -216,7 +216,7 @@ header{
 }
 
 .dropdown-link:first-child:hover ~ .arrow{
-    background-color: #3498db;
+    background-color: #FF0000; 
 }
 
 .dropdown-link{
@@ -708,26 +708,6 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #c44a47; /* Matching the red color from the image */
     padding: 5%; 
@@ -920,4 +900,3 @@ footer {
         transform: translateY(15px);
     }
 }
-
