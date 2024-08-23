@@ -315,7 +315,7 @@ header{
 /* inicio primera seccion */
 
 .primera-seccion {
-    background: url(/assets/imagenes/Fondo.png);
+    background: url(./assets/imagenes/Fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -768,20 +768,22 @@ footer {
     }
 
     .nav-btn{
-        position: fixed;
-        height: calc(100vh - 3rem);
-        top: 6rem;
+        position: fixed; /* Mantén fixed si quieres que siempre esté visible */
+        height: calc(100vh - 3rem); /* Ajusta si es necesario */
+        top: 6rem; /* Reduce el valor para que esté más arriba */
         left: 0;
         width: 100%;
         backdrop-filter: blur(32px);
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start; /* Cambiar a flex-start para alinear arriba */
+        padding-top: 1rem; /* Espacio adicional si es necesario */
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(100%);
         transition: .65s;
     }
+    
 
     #check:checked ~ .nav-btn{
         transform: translateX(0);

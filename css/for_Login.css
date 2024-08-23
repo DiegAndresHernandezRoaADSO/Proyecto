@@ -1,0 +1,141 @@
+/* Definición de variables globales */
+:root {
+    --background-color-light: #f0f0f0;
+    --background-color-dark: #4a4a4a;
+    --input-background-color: #666666;
+    --text-color-light: #e0e0e0;
+    --text-color-placeholder: #b0b0b0;
+    --accent-color: #ff6f61;
+    --button-background-color: #ff6f61;
+    --button-disabled-background-color: #cccccc;
+    --button-disabled-text-color: #4a4a4a;
+    --border-radius: 10px;
+    --padding: 16px 15px;
+    --button-font-size: 16px;
+    --button-height: 40px;
+    --form-max-width: 450px;
+    --btn-width: 120%;
+    --btn-max-width: 400px;
+}
+
+/* Reset global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form content styles */
+.form-content {
+    width: 100%;
+    max-width: var(--form-max-width);
+    background-color: var(--background-color-dark);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-content h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
+    position: relative;
+}
+
+.form-content h1::after {
+    content: " ";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-fiel {
+    background-color: var(--input-background-color);
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: var(--padding);
+    color: var(--text-color-light);
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--text-color-placeholder);
+}
+
+.input-fiel i {
+    margin-left: 15px;
+    color: var(--accent-color);
+}
+
+form p {
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+form p a {
+    color: var(--accent-color);
+    margin-left: 5px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-field button {
+    font-size: var(--button-font-size);
+    background-color: var(--button-background-color);
+    color: #fff;
+    height: var(--button-height);
+    border-radius: var(--border-radius);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Añadido transición para el hover */
+    width: var(--btn-width);
+    max-width: var(--btn-max-width);
+}
+
+.btn-field button:hover {
+    background-color: #e55b50; /* Cambia el color de fondo en hover (puedes ajustarlo según tu preferencia) */
+    color: #fff; /* Cambia el color del texto en hover (puedes ajustarlo según tu preferencia) */
+}
+
+.btn-field button.disable {
+    background-color: var(--button-disabled-background-color);
+    color: var(--button-disabled-text-color);
+}
