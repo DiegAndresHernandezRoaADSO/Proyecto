@@ -1,52 +1,72 @@
 // Importación de módulos
-import isEmail from "../modules/is_email.js";
+import is_Email from "../modules/is_email.js";
 import is_letters from "../modules/is_letters.js";
 import is_number from "../modules/is_number.js";
 import is_valid from "../modules/is_valid.js";
 import remover from "../modules/remove.js";
+import validarcontraseña from "../modules/is_password.js";
 
 const $formulario = document.querySelector("form");
 
 // Variables para el formulario de registro
-const nombre = document.querySelector("#nombre");
-const apellido = document.querySelector("#apellido");
+const nombres = document.querySelector("#nombres");
+const apellidos = document.querySelector("#apellidos");
 const telefono = document.querySelector("#telefono");
 const correo = document.querySelector("#correo");
-const contrasena = document.querySelector("#contrasena");
-const button = document.querySelector("#submitButton");
+const contraseña = document.querySelector("#contraseña");
 
 // Manejar el envío del formulario
 $formulario.addEventListener("submit", (event) => {
-    if (!is_valid(event, "$formulario [required]")) {
-        event.preventDefault(); // Prevenir el envío si la validación falla
+    if (!is_valid(event, `${$formulario} [required]`)) {
+        event.preventDefault(); 
     }
 });
 
-// Remover clases de error en tiempo real
-[nombre, apellido, telefono, correo, contrasena].forEach(input => {
-    input.addEventListener("input", () => remover(input));
+[nombres, apellidos, correo, telefono, contraseña].forEach(input => {
+    input.addEventListener("keyup", () => {
+        remover(input);
+    });
 });
 
-// Validación en tiempo real del teléfono
-telefono.addEventListener("input", is_number); // 'input' es más adecuado que 'keypress' para campos de entrada
+// Remover clases de error en tiempo real y validar campos
 
-// Validación en tiempo real del nombre
-nombre.addEventListener("input", (event) => {
-    is_letters(event, nombre);
+// Validación del telefono
+telefono.addEventListener("keypress", is_number);
+
+// Validación del nombre 
+nombres.addEventListener("keypress", (event) => {
+    is_letters(event, nombres);
 });
 
-// Validación en tiempo real del apellido
-apellido.addEventListener("input", (event) => {
-    is_letters(event, apellido);
+// Validación del apellido
+apellidos.addEventListener("keypress", (event) => {
+    is_letters(event, apellidos);
 });
 
-// Validación del correo electrónico al perder el foco
+// Validación del correo electrónico
 correo.addEventListener("blur", (event) => {
-    isEmail(event, correo);
+    is_Email(event, correo);
 });
 
-// Validación de la contraseña al perder el foco (añade lógica según lo necesario)
-contrasena.addEventListener("blur", (event) => is_valid(event, contrasena));
+contraseña.addEventListener("keypres", (event)=>{
+    is_valid(event,contraseña)
+    validarcontraseña(event,contraseña)
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

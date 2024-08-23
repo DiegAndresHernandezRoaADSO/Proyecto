@@ -6,4 +6,4 @@ const is_letters =(event, elemento) =>{
     }
 }
 
-export default is_letters
+export default is_letters;

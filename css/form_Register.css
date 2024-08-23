@@ -83,15 +83,11 @@ input {
     padding: var(--padding);
     color: var(--text-color-light);
     outline: none;
+    border-radius: var(--border-radius);
 }
 
 input::placeholder {
     color: var(--text-color-placeholder);
-}
-
-.input-fiel i {
-    margin-left: 15px;
-    color: var(--accent-color);
 }
 
 form p {
@@ -138,11 +134,11 @@ form p a {
 
 
 .error {
-    border: solid 1px #ff0019;
+    border: solid 2px #ff0019;
 }
 
 .correcto {
-    border: solid 1px #00c92f;
+    border: solid 2px #00c92f;
 }
 
 

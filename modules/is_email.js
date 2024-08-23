@@ -1,4 +1,4 @@
-const isEmail = (event, elemento) => {
+const is_Email = (event, elemento) => {
     let expresion = /^[\w-._]+@[\w-._]+(\.[a-zA-Z]{2,4}){1,2}$/;
     if (expresion.test(elemento.value)) {
         elemento.classList.remove("error")
@@ -8,4 +8,4 @@ const isEmail = (event, elemento) => {
         elemento.classList.add("error")
     };
 };
-export default isEmail;
+export default is_Email;

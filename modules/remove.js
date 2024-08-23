@@ -8,5 +8,5 @@ const remover = (input) => {
         input.classList.add("error");
     }
 };
-
-export default remover;
+  
+  export default remover;
