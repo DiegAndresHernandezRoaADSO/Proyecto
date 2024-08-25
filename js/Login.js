@@ -28,3 +28,9 @@ $formulario.addEventListener("submit", (event) => {
 Correo.addEventListener("blur", (event) => {
     is_Email(event, Correo);
 });
+
+
+function redireccionar() {
+    window.location.href = "menu.html";
+}
+

@@ -51,8 +51,6 @@ correo.addEventListener("blur", (event) => {
 contraseña.addEventListener("keypres", (event)=>{
     is_valid(event,contraseña)
     validarcontraseña(event,contraseña)
-
-
 })
 
 

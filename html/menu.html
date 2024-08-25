@@ -4,72 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Arte</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        /* Estilo para ocultar secciones de categorías */
+        .category-section {
+            display: none;
+        }
+
+        .category-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-
     <aside class="sidebar">
         <div class="sidebar-header">
-            <img src="../assets/imagenes/logo.png" alt="logo">
-            <h2>Galería de Arte</h2>
+            <img src="../assets/imagenes/logo.png" alt="Logo">
+            <h2>ExpresArt</h2>
         </div>
         <ul class="sidebar-links">
-            <h4>
-                <span>Main menu</span>
-                <div class="menu-separator"></div>
-            </h4>
             <li>
-                <a href="#"><span class="material-symbols-outlined">home</span> Inicio</a>
+                <a href="#inicio">
+                    <i class="fas fa-home"></i> <!-- Ícono de "Home" -->
+                    Inicio
+                </a>
             </li>
             <li>
-                <a href="#"><span class="material-symbols-outlined">collections</span> Galería</a>
+                <a href="#galeria">
+                    <i class="fas fa-palette"></i> <!-- Ícono de "Paleta de Pintura" -->
+                    Galería
+                </a>
             </li>
             <li>
-                <a href="#"><span class="material-symbols-outlined">insights</span> Analytics</a>
-            </li>
-            <h4>
-                <span>General</span>
-            </h4>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">folder_special</span> Proyectos</a>
+                <a href="#categorias">
+                    <i class="fas fa-th-list"></i>
+                    Categorías
+                </a>
             </li>
             <li>
-                <a href="#"><span class="material-symbols-outlined">groups</span> Grupos</a>
+                <a href="#artistas">
+                    <i class="fas fa-users"></i> <!-- Ícono de "Usuarios" -->
+                    Artistas
+                </a>
             </li>
             <li>
-                <a href="#"><span class="material-symbols-outlined">swap_horiz</span> Transferir</a>
+                <a href="#exhibiciones">
+                    <i class="fas fa-calendar-alt"></i> <!-- Ícono de "Calendario" -->
+                    Exhibiciones
+                </a>
             </li>
             <li>
-                <a href="#"><span class="material-symbols-outlined">flag</span> Reportes</a>
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">notifications</span> Notificaciones</a>
-            </li>
-            <h4>
-                <span>Account</span>
-                <div class="menu-separator"></div>
-            </h4>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">account_circle</span> Perfil</a>
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">settings</span> Configuración</a>
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">logout</span> Cerrar sesión</a>
+                <a href="#configuracion">
+                    <i class="fas fa-cog"></i> <!-- Ícono de "Configuración" -->
+                    Configuración
+                </a>
             </li>
         </ul>
         <div class="user-account">
             <div class="user-profile">
                 <img src="../assets/imagenes/user.png" alt="Foto de perfil">
                 <div class="user-detail">
-                    <h3>Diego Hernandez</h3>
-                    <span>Web Developer</span>
+                    <h3>Usuario</h3>
+                    <span>Ver perfil</span>
                 </div>
             </div>
         </div>
     </aside>
-</body>
-</html>
 
+    <div class="main-content">
+        <div id="inicio" class="section active">
+            <h1>Inicio</h1>
+            <p>Bienvenido a ExpresArt, tu galería de arte en línea. En esta plataforma, podrás explorar una amplia gama de obras de arte, desde pinturas hasta fotografías. Te invitamos a registrarte para disfrutar de todas las características y participar en nuestra comunidad artística.</p>
+            <p>Descubre nuevas exposiciones, conoce a los artistas y mantente al tanto de los eventos que tenemos preparados para ti.</p>
+            <div class="content">
+                <h2>Disfruta tu galeria web</h2>
+                <p>Entra y diviertete!!</p>
+            </div>
+        </div>
+
+        <div id="galeria" class="section">
+            <h1>Galería</h1>
+            <p>Explora nuestra extensa colección de obras de arte. Puedes navegar por las diferentes categorías para encontrar piezas que te inspiren. Cada obra está acompañada de una descripción detallada y, en muchos casos, una historia sobre el artista y el contexto de la obra.</p>
+            <p>Para los artistas, ofrecemos un espacio para que muestres tus propias creaciones y las compartas con el mundo. Si tienes una pieza que te gustaría que otros vean, ¡anímate a subirla!</p>
+
+            <div class="gallery">
+                <img src="../assets/imagenes/imagen1.png" alt="Imagen 1">
+                <img src="../assets/imagenes/imagen2.png" alt="Imagen 2">
+                <img src="../assets/imagenes/imagen3.png" alt="Imagen 3">
+                <img src="../assets/imagenes/imagen4.png" alt="Imagen 4">
+                <img src="../assets/imagenes/imagen1.png" alt="Imagen 1">
+                <img src="../assets/imagenes/imagen2.png" alt="Imagen 2">
+                <img src="../assets/imagenes/imagen3.png" alt="Imagen 3">
+                <img src="../assets/imagenes/imagen4.png" alt="Imagen 4">
+                <img src="../assets/imagenes/imagen1.png" alt="Imagen 1">
+                <img src="../assets/imagenes/imagen2.png" alt="Imagen 2">
+                <img src="../assets/imagenes/imagen3.png" alt="Imagen 3">
+                <img src="../assets/imagenes/imagen4.png" alt="Imagen 4">
+            </div>
+        </div>
+
+        <div id="categorias" class="section">
+            <h1>Categorías</h1>
+            <p>Navega a través de nuestras categorías para encontrar obras de arte agrupadas por estilo, técnica o tema. Las categorías incluyen:</p>
+            <div class="seccion-categorias">
+                <ul>
+                    <li><a href="#" onclick="showCategory('pintura')">Pintura</a></li>
+                    <li><a href="#" onclick="showCategory('dibujos')">Dibujos</a></li>
+                    <li><a href="#" onclick="showCategory('fotografia')">Fotografía</a></li>
+                </ul>                
+            </div>
+            
+            <!-- Secciones ocultas para cada categoría -->
+            <div id="pintura" class="category-section">
+                <h2>Pintura</h2>
+                <p>Explora una colección de obras de arte pintadas en diversos estilos y técnicas.</p>
+
+                <div class="contenedor-pinturas">
+                    <img src="../assets/imagenes/imagen2.png" alt="">
+                    <img src="../assets/imagenes/imagen3.png" alt="">
+                    <img src="../assets/imagenes/imagen4.png" alt="">
+                    <img src="../assets/imagenes/imagen2.png" alt="">
+                    <img src="../assets/imagenes/imagen3.png" alt="">
+
+                    <img src="../assets/imagenes/imagen4.png" alt="">
+                    <img src="../assets/imagenes/imagen2.png" alt="">
+                    <img src="../assets/imagenes/imagen3.png" alt="">
+                    <img src="../assets/imagenes/imagen4.png" alt="">
+                    <img src="../assets/imagenes/imagen4.png" alt="">
+
+                </div>
+            </div>
+
+            <div id="dibujos" class="category-section">
+                <h2>Dibujos</h2>
+                <p>Descubre una variedad de dibujos en diferentes medios y estilos.</p>
+                <!-- Contenido adicional específico para la categoría de Dibujos -->
+            </div>
+
+            <div id="fotografia" class="category-section">
+                <h2>Fotografía</h2>
+                <p>Explora obras fotográficas capturadas por talentosos artistas.</p>
+                <!-- Contenido adicional específico para la categoría de Fotografía -->
+            </div>
+        </div>
+
+        <div id="artistas" class="section">
+            <h1>Artistas</h1>
+            <p>Conoce a los talentosos artistas que contribuyen a nuestra galería. Cada perfil incluye una biografía del artista, una muestra de sus obras y sus exposiciones recientes. Puedes buscar artistas por nombre, nacionalidad o técnica.</p>
+            <p>Si eres un artista, puedes registrarte y crear tu propio perfil para compartir tu trabajo y conectar con otros creativos.</p>
+        </div>
+
+        <div id="exhibiciones" class="section">
+            <h1>Exhibiciones</h1>
+            <p>Descubre nuestras exhibiciones actuales y futuras. Las exhibiciones incluyen una selección curada de obras que siguen un tema o concepto específico. Cada exhibición tiene su propia página con información sobre las obras, los artistas y el evento en sí.</p>
+            <p>Participa en eventos en vivo y exposiciones virtuales, y mantente al tanto de nuestras próximas exhibiciones para no perderte ninguna oportunidad de ver arte en su máxima expresión.</p>
+        </div>
+
+        <div id="configuracion" class="section">
+            <h1>Configuración</h1>
+            <p>Administra tu perfil y preferencias desde esta sección. Puedes actualizar tu información personal, cambiar tu contraseña y ajustar tus preferencias de notificación.</p>
+            <p>Además, tienes la opción de gestionar tu cuenta, revisar tus actividades recientes y ajustar las configuraciones de privacidad para mantener el control sobre tu información.</p>
+        </div>
+    </div>
+
+    <script src="../js/xd.js"></script>
+</body> 
+</html>
