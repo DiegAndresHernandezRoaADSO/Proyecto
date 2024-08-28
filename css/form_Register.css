@@ -1,4 +1,6 @@
 /* Definición de variables globales */
+
+
 :root {
     --background-color-light: #f0f0f0;
     --background-color-dark: #4a4a4a;
@@ -19,6 +21,7 @@
 }
 
 /* Reset global styles */
+
 * {
     margin: 0;
     padding: 0;
